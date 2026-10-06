@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import "./App.css";
+import Board from "./Board";
 
 function TravelHeader() {
   function handlePlanClick() {
@@ -13,6 +14,7 @@ function TravelHeader() {
         <a href="#intro">부천 여행</a>
         <a href="#info">가볼 만한 곳</a>
         <a href="#guide">여행 안내</a>
+        <a href="#board">게시판</a>
       </nav>
       <a className="plan-link" href="#info" onClick={handlePlanClick}>
         여행 플래너 ＋
@@ -166,7 +168,10 @@ function TodayPick() {
     <section className="today-pick">
       <h2>오늘의 추천</h2>
       {pick === null ? (
-        <p className="loading">불러오는 중…</p>
+        <div className="pick-card" aria-busy="true">
+          <strong className="loading">불러오는 중…</strong>
+          <p>&nbsp;</p>
+        </div>
       ) : (
         <div className="pick-card">
           <strong>{pick.name}</strong>
@@ -222,6 +227,7 @@ function App() {
         <TravelTip />
 
         <TravelMemo />
+        <Board />
       </main>
       <TravelFooter />
     </>
