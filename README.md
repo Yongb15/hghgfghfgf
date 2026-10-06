@@ -7,6 +7,19 @@
 만화와 예술, 도심 속 공원과 계절의 꽃을 하루에 만날 수 있는 부천의 여행 명소와
 방문 정보를 안내합니다.
 
+## 스크린샷
+
+<table>
+  <tr>
+    <td><img src="docs/screenshot-desktop.png" alt="데스크톱 화면" width="480" /></td>
+    <td><img src="docs/screenshot-mobile.png" alt="모바일 화면" width="200" /></td>
+  </tr>
+  <tr>
+    <td align="center">데스크톱</td>
+    <td align="center">모바일</td>
+  </tr>
+</table>
+
 ## 주요 기능
 
 - **대표 명소 소개** — 원미산 진달래동산, 한국만화박물관, 상동호수공원 등 부천의
